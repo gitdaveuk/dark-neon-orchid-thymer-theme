@@ -1,0 +1,86 @@
+/* ============================================================
+   DARK THEME: NEON ORCHID
+   ============================================================ */
+html[data-theme="basic-dark-neon-orchid"] {
+    color-scheme: dark;
+
+    /* 1. Headings */
+    .heading-h1, .heading-h2, .heading-h3,
+    .heading-h4, .heading-h5, .heading-h6 {
+        color: #ffd6ff;
+        text-shadow: 0 0 8px rgba(255, 90, 255, 0.25);
+    }
+
+    /* 2. Core Backgrounds */
+    --color-bg-950: #10091b;
+    --color-bg-900: #171026;
+    --color-bg-800: #221733;
+    --color-bg-700: #2e2145;
+    --color-bg-600: #43305f;
+
+    /* 3. Primary Accents */
+    --color-primary-400: #ff5ad9;
+    --color-primary-500: #ff5ad9;
+    --color-primary-600: #d93cff;
+    --color-primary-text-100: #10091b;
+
+    /* 4. Text */
+    --color-text-50:  #fff3ff;
+    --color-text-100: #f3dcff;
+    --color-text-400: #d7c4f5;
+    --color-text-700: #9f8cbf;
+
+    /* 5. Caret */
+    --ed-caret-self-fg: var(--color-primary-500);
+    --ed-caret-self-background: color-mix(in srgb, currentColor 70%, transparent);
+    --ed-caret-self-border-width: 0px;
+    --ed-caret-self-box-shadow: 0 0 4px currentColor;
+    --ed-caret-self-radius: 2px;
+
+    /* 6. Layout */
+    --titlebar-bg-color: var(--color-bg-950);
+    --panel-bg-color: var(--color-bg-900);
+    --side-bg-color: var(--color-bg-800);
+    --status-bg-color: var(--color-bg-700);
+
+    --divider-color: rgba(255,255,255,0.05);
+
+    /* 7. Inputs */
+    --input-bg-color: var(--color-bg-950);
+    --input-border-focus: 1px solid var(--color-primary-500);
+    --input-border-shadow: 0 0 14px color-mix(in srgb, var(--color-primary-500) 45%, transparent);
+
+    --cmdpal-bg-color: var(--color-bg-800);
+    --cmdpal-selected-bg-color: #9d4edd;
+    --cmdpal-selected-fg-color: white;
+
+    /* 8. Semantic */
+    --text-ok: #3cffb3;
+    --text-warning: #ffd166;
+    --text-error: #ff4d6d;
+
+    --ed-check-div-border: #ff5ad9;
+    --ed-check-done-bg: #3cffb3;
+    --ed-check-done-fg: #10091b;
+
+    .listitem.listitem-task.state-done .lineitem-text {
+        color: #8f78aa !important;
+        text-decoration-color: #8f78aa !important;
+    }
+
+    /* Little extras */
+
+    .panel,
+    .sidebar {
+        box-shadow: inset 0 0 0 1px rgba(255,90,217,.05);
+    }
+
+    .button:hover,
+    button:hover {
+        filter: brightness(1.08);
+    }
+
+    ::selection {
+        background: rgba(255,90,217,.35);
+    }
+}
